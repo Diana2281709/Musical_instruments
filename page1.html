@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    .icon {
+      display: none;
+     }
+    @media (max-width:1000px) {
+      #notMOB {
+        display: none;
+      }
+      #myNavbar {
+        display: none;
+      }
+     .icon {
+      display: block;
+      text-align: center;
+     }
+    }
+    @media only screen and (max-width: 1000px) and (min-width: 800px)  {
+          body {
+        background-color: rgb(243, 136, 136);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar bg-white">
+    <div class="container-fluid">
+      <a href="index.html"><h1 class="text-center"> Инструменты мира </h1></a>
+      </div>
+      </nav>
+      <nav class="navbar bg-info" id="nav1">
+        <div class="container-fluid">
+          <a href="javascript:void(0);" class="icon" class="text-center" onclick="myFunction()"> menu </a>
+ <nav class="navbar bg-info">
+  <div class="container-fluid">
+   
+    <div class="navbar" id="myNavbar">
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item nav-link"><a href="page1.html"> Идиофоны </a></li>
+        <li class="nav-item nav-link"><a href="page2.html"> Мембранофоны </a></li>
+        <li class="nav-item nav-link"><a href="page3.html"> Хордофоны </a></li>
+        <li class="nav-item nav-link"><a href="#"> Аэрофоны </a></li>
+        <li class="nav-item nav-link"><a href="#"> Электрофоны </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+<main>
+    <h1 class="text-center"> Идиофоны </h1> 
+    <br>
+    <h3 class="bg-primary"> 12. Щипковые идиофоны </h3>
+    <div class="row" style="text-align:center">
+    <div class="col-sm-2">
+    <p class="text-center"> Арфа </p>
+    <img src="Images/арфа.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-2">
+    <p> Древнее пианино </p>
+    <img src="Images/древнее пианино.jpg" class="img-responsive" alt="Image" >
+    </div>
+    <div class="col-sm-2">
+    <p> Калимба </p>
+    <img src="Images/калимба.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-2">
+    <p> Музыкальная коробка </p>
+    <img src="Images/музыкальная коробка.jpg" class="img-responsive" alt="Image">
+    </div>
+    </div>
+    <h3 class="bg-primary"> 13. Фрикционные идиофоны </h3>
+    <div class="row">
+    <div class="col-sm-3">
+    <p> Веррофон </p>
+    <img src="Images/веррофон.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Даксофон </p>
+    <img src="Images/даксофон.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Музыкальная пила </p>
+    <img src="Images/музыкальная пила.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">   
+    <p> Стеклянная арфа </p>
+    <img src="Images/стеклянная арфа.jpg" class="img-responsive" alt="Image">
+    </div>
+    </div>
+    <h3 class="bg-primary"> 14. Ударные идиофоны </h3>
+    <div class="row">
+    <div class="col-sm-3">
+    <p> Тарелки </p>
+    <img src="Images/тарелки.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Ложки </p>
+    <img src="Images/ложки.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Райбан </p>
+    <img src="Images/райбан.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">   
+    <p> Кастаньеты </p>
+    <img src="Images/кастаньеты.jpg" class="img-responsive" alt="Image">
+    </div>
+    </div>
+</main>
+<footer class="container-fluid text-center">
+    <p> © 2023 Diana Bezborodova KAZAKHSTAN </p>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script> 
+</body>
+</html>

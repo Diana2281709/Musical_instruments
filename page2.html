@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    .icon {
+      display: none;
+     }
+    @media (max-width:1000px) {
+      #notMOB {
+        display: none;
+      }
+      #myNavbar {
+        display: none;
+      }
+     .icon {
+      display: block;
+      text-align: center;
+     }
+    }
+    @media only screen and (max-width: 1000px) and (min-width: 800px)  {
+          body {
+        background-color: rgb(243, 136, 136);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar bg-white">
+    <div class="container-fluid">
+      <a href="index.html"><h1 class="text-center"> Инструменты мира </h1></a>
+      </div>
+      </nav>
+      <nav class="navbar bg-info" id="nav1">
+        <div class="container-fluid">
+          <a href="javascript:void(0);" class="icon" class="text-center" onclick="myFunction()"> menu </a>
+  <nav class="navbar bg-info">
+    <div class="container-fluid">
+   
+    <div class="navbar" id="myNavbar">
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item nav-link"><a href="page1.html"> Идиофоны </a></li>
+        <li class="nav-item nav-link"><a href="page2.html"> Мембранофоны </a></li>
+        <li class="nav-item nav-link"><a href="page3.html"> Хордофоны </a></li>
+        <li class="nav-item nav-link"><a href="#"> Аэрофоны </a></li>
+        <li class="nav-item nav-link"><a href="#"> Электрофоны </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+<main>
+    <h1 class="text-center"> Мембранофоны </h1> 
+    <br>
+    <h3 class="bg-primary"> 21. Щипковые мембранофоны </h3>
+    <div class="row">
+    <div class="col-sm-3">
+    <p> Басовый барабан </p>
+    <img src="Images 2/басовый барабан.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Бубен </p>
+    <img src="Images 2/бубен.jpg" class="img-responsive" alt="Image" >
+    </div>
+    <div class="col-sm-3">
+    <p> Лентавры </p>
+    <img src="Images 2/лентавры.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Тайко </p>
+    <img src="Images 2/тайко.jpg" class="img-responsive" alt="Image">
+    </div>
+    </div>
+    <h3 class="bg-primary"> 22. Фрикционные мембранофоны </h3>
+    <div class="row">
+    <div class="col-sm-3">
+    <p> Куика </p>
+    <img src="Images 2/куика.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Бонго барабан </p>
+    <img src="Images 2/бонго барабан.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Табла </p>
+    <img src="Images 2/табла.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">   
+    <p> Роммельпот </p>
+    <img src="Images 2/роммельпот.jpg" class="img-responsive" alt="Image">
+    </div>
+    </div>
+    <h3 class="bg-primary"> 23. Ударные мембранофоны </h3>
+    <div class="row">
+    <div class="col-sm-3">
+    <p> Казу </p>
+    <img src="Images 2/казу.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Тимпани </p>
+    <img src="Images 2/тимпани.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">
+    <p> Октобан </p>
+    <img src="Images 2/октобан.jpg" class="img-responsive" alt="Image">
+    </div>
+    <div class="col-sm-3">   
+    <p> Джембе </p>
+    <img src="Images 2/джембе.jpg" class="img-responsive" alt="Image">
+    </div>
+    </div>
+</main>
+<footer class="container-fluid text-center">
+    <p> © 2023 Diana Bezborodova KAZAKHSTAN </p>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script> 
+</body>
+</html>

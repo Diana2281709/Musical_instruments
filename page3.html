@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    .icon {
+      display: none;
+     }
+    @media (max-width:1000px) {
+      #notMOB {
+        display: none;
+      }
+      #myNavbar {
+        display: none;
+      }
+     .icon {
+      display: block;
+      text-align: center;
+     }
+    }
+    @media only screen and (max-width: 1000px) and (min-width: 800px)  {
+          body {
+        background-color: rgb(243, 136, 136);
+      }
+    }
+    .hordo {
+        background: black url(Images/фон\ 5.jpg) center top no-repeat;
+        height: 100vh;
+        width: 40vw;
+        background-size: cover;
+        float: right;
+        shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        shape-margin: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    }
+    .content {
+        height: 100vh;
+        width: 100vw;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar bg-white">
+    <div class="container-fluid">
+      <a href="index.html"><h1 class="text-center"> Инструменты мира </h1></a>
+      </div>
+      </nav>
+      <nav class="navbar bg-info" id="nav1">
+        <div class="container-fluid">
+          <a href="javascript:void(0);" class="icon" class="text-center" onclick="myFunction()"> menu </a>
+  <nav class="navbar bg-info">
+    <div class="container-fluid">
+   
+    <div class="navbar" id="myNavbar">
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item nav-link"><a href="page1.html"> Идиофоны </a></li>
+        <li class="nav-item nav-link"><a href="page2.html"> Мембранофоны </a></li>
+        <li class="nav-item nav-link"><a href="page3.html"> Хордофоны </a></li>
+        <li class="nav-item nav-link"><a href="#"> Аэрофоны </a></li>
+        <li class="nav-item nav-link"><a href="#"> Электрофоны </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+<main>
+    <h1 class="text-center"> Хордофоны </h1> 
+    <br>
+    <div class="container">
+        <div class="hordo"></div>
+        <div class="content"><h2>Хордофон — музыкальный инструмент, в котором элементом, издающим звук, является струна, натянутая между двумя фиксированными точками.</h2>
+            В эту группу включаются практически все струнные инструменты и множество клавишных инструментов — например, фортепиано и клавесин. Система Хорнбостеля — Закса присваивает им номер 3. 
+            В эту группу включаются практически все струнные инструменты и множество клавишных инструментов — например, фортепиано и клавесин. Система Хорнбостеля — Закса присваивает им номер 3. 
+            В эту группу включаются практически все струнные инструменты и множество клавишных инструментов — например, фортепиано и клавесин. Система Хорнбостеля — Закса присваивает им номер 3. 
+            В эту группу включаются практически все струнные инструменты и множество клавишных инструментов — например, фортепиано и клавесин. Система Хорнбостеля — Закса присваивает им номер 3.   
+            В эту группу включаются практически все струнные инструменты и множество клавишных инструментов — например, фортепиано и клавесин. Система Хорнбостеля — Закса присваивает им номер 3. 
+            В эту группу включаются практически все струнные инструменты и множество клавишных инструментов — например, фортепиано и клавесин. Система Хорнбостеля — Закса присваивает им номер 3. 
+        </div>
+    </div>
+    <a name="autoplay"></a>
+    <div class="slider autoplay">
+      <div><img src="Images 2/muzykalnyj-bukvar.jpg" height="200px"></div>
+      <div><img src="Images 2/хордофоны.jpg" height="200px"></div>
+      <div><img src="Images 2/хордофоны2.jpg" height="200px"></div>
+      <div><img src="Images 2/muzykalnyj-bukvar.jpg" height="200px"></div>
+      <div><img src="Images 2/хордофоны.jpg" height="200px"></div>
+      <div><img src="Images 2/хордофоны2.jpg" height="200px"></div>
+    </div>
+    <pre><code class="javascript">
+      $('.autoplay').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+      });
+    </code>
+    </pre>
+    </main>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+  </body>
+</html>
